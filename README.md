@@ -3,6 +3,9 @@
 Point & Fetch, is a vision-language-enabled assistive system which aims to to help individuals with physical or speech impairments interact wittheir environment through intuitive, non-verbal gestures. The system allows users to simply pointat an object, upon which it interprets the intent and detects the object to be fetched. By leveraging recent advances in object detection, human pose estimation, and large language models (LLMs), our modular framework integrates gesture recognition with contextual understanding to determine the user’s needs.
 
 ## Design and Development
+
+![Design Flow](https://github.com/aratrika02/Point-Fetch/blob/main/flow.jpg)
+
 Our design comprises three key modules: MediaPipe, YOLOv8, and Deepseek. We use MediaPipe and YOLO to calculate the geometrically most likely object to be fetched and then leverage the reasoning powers of DeepSeek to bring contextual understanding into the fold, to determine whether the object is reasonable to fetch or not.
 ### 1. MediaPipe
 We use MediaPipe (specifically, MediaPipe Hands), a lightweight, high-fidelity hand and finger tracker for gesture (pointing) detection. 
